@@ -1,5 +1,7 @@
-var light=document.getElementById('light-bulb');
-light.addEventListener('click',function(light){
-    light.target.classList.toggle('onbulb');
-
+mybutton=document.getElementById('len');
+myoutput=document.getElementById('result');
+mybutton.addEventListener('click',function(){
+    mystrvalues=document.getElementById('word').value;
+    myoutput.innerHTML=mystrvalues.length;
+    
 })
