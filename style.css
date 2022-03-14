@@ -1,5 +1,19 @@
 #container{
     width: 500px;
     height: 500px;
-    background-color: red;
+}
+.bulb-off{
+    width: 200px;
+    height: 200px;
+    background: url(./off-bulb.jpg);
+
+
+}
+.onbulb{
+    width: 200px;
+    height: 200px;
+    background: url(./on-bulb.jpg);
+
+
+
 }
