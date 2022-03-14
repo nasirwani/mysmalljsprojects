@@ -1,41 +1,24 @@
-h1{
-    color: white;
-    text-align: center;
-}
+
 body{
     background-color:black
 }
 .container{
-    width: 350px;
-    height: 400px;
-    background-color:cyan;
+    width: 750px;
+    height: 275px;
+    background-color:gray;
     padding: 20px;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin:100px auto;
 
 }
-#number{
-    width: 100%;
-    height: 20px;
-    background-color: white;
-    border: 1px solid green;
-    text-align: center;
-    padding: 10px 0px;
-    font-weight: 700;
+#btn{
+    margin: 50px auto;
+    height: 50px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
 }
-#inc{
-    margin: 100px 50px;
-    padding:  20px;
-    background-color: black;
-    color: white;
-    font-size: large;
-
-}
-#dec{
-    margin: 100px 50px;
-    padding:  20px;
-    background-color: black;
-    color: white;
-    font-size: large;
-
+#quote{
+    margin: 25px;
+    color:white;
+    font-size: 26px;
 }
