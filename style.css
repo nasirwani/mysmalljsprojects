@@ -1,24 +1,27 @@
-
-body{
-    background-color:black
-}
 .container{
-    width: 750px;
+    background: gray;
+    width: 770px;
     height: 275px;
-    background-color:gray;
-    padding: 20px;
-    margin:100px auto;
-
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid green;
+    padding: 30px;
+}
+#num{
+    padding: 5px;
+}
+p{
+    color:whitesmoke;
+    font-size: medium;
+    font-weight: 700;
+    margin-top: 30px;
+    padding: 10px;
+    text-transform: uppercase;
 }
 #btn{
-    margin: 50px auto;
-    height: 50px;
-    width: 250px;
-    border: none;
-    font-size: 20px;
-}
-#quote{
-    margin: 25px;
-    color:white;
-    font-size: 26px;
+    margin: 25px auto auto 5px;
+    padding: 5px;
+    font-weight: 500;
+    /* border: none;
+    outline: none; */
 }
