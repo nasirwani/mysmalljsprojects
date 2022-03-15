@@ -1,13 +1,23 @@
-//colors array
-const colors=['red','blue','white','yellow','green','black'];
-//get button by id
 let mybtn=document.getElementById('btn');
-//adding eventlistener on button
+myoutput=document.getElementById('output');
+let number=Math.floor(Math.random()*100);
+mytext=document.getElementById('num');
+let mycount=0;
 mybtn.addEventListener('click',function(){
-    //accessing array
-    var randomcolor=colors[Math.floor(Math.random()*colors.length)];
-    //getting body
-    const body=document.body;
-    //applyng style
-    body.style.background=randomcolor;
-})
+    let myinput=mytext.value;
+    if(myinput==number){
+        myoutput.innerHTML=`you guessed the right number,and you guessed it in ${mycount} attempts`;
+        mycount+=1;
+    }
+    else if(myinput<number){
+        myoutput.innerHTML=`your number is too low`;
+        mycount+=1
+        
+    }
+    else if(myinput>number){
+        myoutput.innerHTML=`your number is too high`
+        mycount+=1;
+    }
+    mytext.value=' ';
+  
+});
