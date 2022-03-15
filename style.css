@@ -1,27 +1,24 @@
 .container{
-    background: gray;
-    width: 770px;
-    height: 275px;
-    margin: 0 auto;
+    background-color:lightslategray;
+    width: 550px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+     margin: 0 auto;
+}
+
+#day{
+    font-size: 50px;
+    color: white;
     text-align: center;
-    border: 3px solid green;
-    padding: 30px;
 }
-#num{
-    padding: 5px;
+#year{
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
-p{
-    color:whitesmoke;
-    font-size: medium;
-    font-weight: 700;
-    margin-top: 30px;
-    padding: 10px;
-    text-transform: uppercase;
-}
-#btn{
-    margin: 25px auto auto 5px;
-    padding: 5px;
-    font-weight: 500;
-    /* border: none;
-    outline: none; */
-}
+
+
