@@ -1,5 +1,24 @@
-#container{
-    width: 500px;
-    height: 500px;
-    background-color: red;
+.container{
+    background-color:lightslategray;
+    width: 550px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     margin: 0 auto;
+     padding: 9px 0;
 }
+
+#meter{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#output{
+    width: 90%;
+    background: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
