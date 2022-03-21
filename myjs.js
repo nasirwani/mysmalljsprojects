@@ -1,12 +1,18 @@
-let mymeter=document.getElementById('meter');
-let myfeet=document.getElementById('feet');
-let myoutput=document.getElementById('output')
-mymeter.addEventListener('click',function(){
-    let myHeightInMeters=document.getElementById('len').value
-    console.log(myHeightInMeters)
-    myoutput.innerHTML=myHeightInMeters/3.21+' '+'Meters';
-})
-myfeet.addEventListener('click',function(){
-    myHeightInFeets=document.getElementById('len').value;
-    myoutput.innerHTML=myHeightInFeets*3.21+" "+ 'Feets';
-})
+
+let finaltime=setInterval(function(){
+let countDownDay=new Date('10 Apr,2022,10:00:00').getTime();
+let currentTime=new Date().getTime();
+let finalCountDown=countDownDay-currentTime;
+
+let showTime=document.getElementById('p')
+var days=Math.floor(finalCountDown/(1000*24*60*60));
+
+let Hours=Math.floor(finalCountDown%(1000*60*60*24)/(1000*60*60));
+
+let Minutes=Math.floor(finalCountDown%(1000*60*60)/(1000*60));
+
+let Seconds=Math.floor(finalCountDown%(1000*60)/(1000));
+
+showTime.innerHTML=days +'d: '+Hours+'h: '+Minutes+"m: "+Seconds+'s';
+},1000);
+
