@@ -9,8 +9,32 @@
 </head>
 <body>
  <div class="container">
-   <h1 class="head">Countdown Starts</h1>
-  <p id="p"></p>
+   <form name="formdisplay">
+    <input type="text" name="forms" id="form" ><br><br>
+    <input type="button" value="7" onclick="formdisplay.forms.value+='7'" class="col">
+    <input type="button" value="8" onclick="formdisplay.forms.value+='8'" class="col">
+    <input type="button" value="9" onclick="formdisplay.forms.value+='9'" class="col">
+    <input type="button" value="*" onclick="formdisplay.forms.value+='*'" class="col"><br><br>
+
+    <input type="button" value="4" onclick="formdisplay.forms.value+='4'" class="col">
+    <input type="button" value="5" onclick="formdisplay.forms.value+='5'" class="col">
+    <input type="button" value="6" onclick="formdisplay.forms.value+='6'" class="col">
+    <input type="button" value="-" onclick="formdisplay.forms.value+='-'" class="col"><br><br>
+
+    <input type="button" value="1" onclick="formdisplay.forms.value+='1'" class="col">
+    <input type="button" value="2" onclick="formdisplay.forms.value+='2'" class="col">
+    <input type="button" value="3" onclick="formdisplay.forms.value+='3'" class="col">
+    <input type="button" value="+" onclick="formdisplay.forms.value+='+'" class="col"><br><br>
+
+    <input type="button" value="0" onclick="formdisplay.forms.value+='0'" class="col">
+    <input type="button" value="." onclick="formdisplay.forms.value+='.'" class="col">
+    <input type="button" value="%" onclick="formdisplay.forms.value+='%'" class="col">
+    <input type="button" value="=" onclick="formdisplay.forms.value=eval(formdisplay.forms.value)" class="col" >
+    <br><br>
+    <input type="button" value="clear" onclick="formdisplay.forms.value=' '" class="cls">
+   </form>
+ 
+
  </div>
   <script src="./myjs.js"></script>
 </body>
