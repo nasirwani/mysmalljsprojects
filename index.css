@@ -1,0 +1,171 @@
+/** @format */
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+body {
+  background-color: #ccc;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+.btn {
+  background-color: var(--dark);
+  color: var(--light);
+  /* color: white; */
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+}
+img {
+  width: 100%;
+}
+.wrapper {
+  display: grid;
+  gap: 20px;
+}
+.nav-bar ul {
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+.nav-bar a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+  padding: 0.8rem;
+  background: var(--primary);
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: var(--dark);
+}
+.nav-bar a:hover {
+  background: var(--dark);
+  color: white;
+}
+.section {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
+}
+.showcase {
+  grid-area: showcase;
+  background: url(./pexels-luis-quintero-2148217.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  padding: 3rem;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+.showcase h1 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.showcase p {
+  color: white;
+  font-size: 2rem;
+}
+.top-box-a {
+  grid-area: top-box-a;
+}
+.top-box-a {
+  grid-area: top-box-b;
+}
+.top-box {
+  background: var(--light);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+.top-box h4 {
+  text-transform: uppercase;
+}
+.top-box .price {
+  font-size: 2.5rem;
+}
+/* analytics */
+.boxes {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.box {
+  background: var(--light);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.info {
+  background-color: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  padding: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.portfolio {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.portfolio img {
+  width: 100%;
+}
+footer {
+  background: var(--dark);
+  margin-top: 2rem;
+  color: var(--light);
+  padding: 1rem;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .section {
+    grid-template-areas:
+      "showcase showcase"
+      "top-box-a top-box-b";
+  }
+  .section h1 {
+    font-size: 2.5rem;
+  }
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .nav-bar ul {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .section {
+    grid-template-areas:
+      "showcase"
+      "top-box-a"
+      "top-box-b";
+  }
+}
